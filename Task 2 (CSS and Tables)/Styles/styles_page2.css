@@ -1,0 +1,155 @@
+/* general styles */
+* {
+  box-sizing: border-box;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, h2, p, ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px 25px;
+  background: url(/img/background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+/* header */
+.header__heading {
+  width: 100%;
+  min-height: 60px;
+  text-align: center;
+  line-height: 2;
+  font-size: 30px;
+  background: #d2b48c;
+  border-top: 1px solid black;
+}
+
+/* main */
+
+/* section list */
+.list {
+  font-size: 0;
+}
+
+.list__title {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 4px;
+}
+
+.list__left {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.list__right {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.list__left_item {
+  list-style: circle inside;
+  padding: 10px 0;
+}
+
+.list__left_item:first-child {
+  color: #d2b48c;
+}
+
+.list__left_item:nth-child(2) {
+  color: red;
+}
+
+.list__left_item:nth-child(3) {
+  font-size: 12px;
+  color: green;
+}
+.list__left_item:last-child {
+  color: orange;
+}
+
+.list__right_item {
+  padding: 10px 0;
+}
+
+.list__right_item:nth-child(2) {
+  color: red;
+}
+
+.list__right_item:nth-child(3) {
+  font-size: 12px;
+  color: green;
+}
+.list__right_item:last-child {
+  color: orange;
+}
+
+/* section table */
+.table__example_title {
+  margin: 35px;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.table_example {
+  margin: 0 auto;
+  width: 90%;
+  border: 5px dotted red;
+  border-collapse: collapse; /* убирает промежуток между границей */
+}
+
+th,td {
+  width: 20%;
+  padding: 17px 0;
+}
+
+.table__example_columnTitle {
+  padding-left: 25px;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+.table__example_column {
+  padding-left: 10px;
+  border: 3px dashed green;
+}
+
+.table__example_column:nth-child(1):not(:last-child) {
+  padding-left: 10px;
+  background-color: yellow;
+  border: 3px dashed green;
+}
+
+.table__example_column[rowspan="2"] {
+  border-left: 3px solid green;
+}
+
+.table__example_column[colspan="2"] {
+  border-bottom: 3px solid green;
+}
+
+.border_bottom_green {
+  border-bottom: 3px solid green;
+}
+
+.table__example_column[colspan="5"] {
+  padding: 30px 0 30px 130px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  background-color: #ca9249;
+}
