@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'sans-serif', 'Times New Roman', Times, serif;
+  background: url(background.jpg) no-repeat center;
+  background-size: cover;
+}
+
+h1,h2,p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.main__title_overline {
+  margin: 25px 0 50px;
+  text-decoration: overline grey;
+}
+
+.main__title {
+  font-size: 45px;
+  color: gray;
+  text-align: center;
+  text-decoration: underline green;
+}
+
+.main__description {
+  margin-bottom: 30px;
+  text-decoration: underline;
+  color: green;
+}
+
+.main__description_red_sentens {
+  font-size: 1.5em;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: red;
+}
+
+.square__green_box {
+  padding-top: 1px;
+  min-height: 400px;
+  background-color: green;
+}
+
+.figure_square {
+  width: 100px;
+  height: 100px;
+}
+
+.square__green_figure1 {
+  margin: 30px 0 10px 300px;
+  background-color: blue;
+}
+
+.square__green_figure2 {
+  margin: 0 0 20px 330px;
+  background-color: palevioletred;
+}
+
+.square__green_figure3 {
+  margin: 0 0 10px 410px;
+  background-color: orange;
+}
+
+.square_red_box {
+  margin-bottom: 50px;
+  padding-top: 1px;
+  min-height: 250px;
+  background-color: red;
+}
+
+.square__red_figure {
+  margin: 15px 0 30px 390px;
+  width: 250px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.footer {
+  padding-top: 1px;
+  min-height: 50px;
+  background-color: black;
+}
+
+.footer__title {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.footer__copyrights {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: gold;
+}
