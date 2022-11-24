@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 1700px;
+  overflow: scroll;
+  background-image: url("./img/bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+input {
+  padding: 7px 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 530px;
+  background-color: white;
+}
+
+/* header */
+.header__container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -265px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+  background-color: rgb(58, 57, 57);
+  opacity: 0.5;
+}
+
+.main {
+  margin-top: 220px;
+}
+
+.header__title_description {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.7em;
+  color: rgb(195, 32, 245);
+}
+
+/* Main */
+
+.legend {
+  font-size: 1.2em;
+}
+
+.main__fio {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 1.3em;
+  color: brown;
+}
+
+.main__field,
+.main__userinfo,
+.main__pass,
+.main__city,
+.main__texarea {
+  width: 100%;
+}
+
+.main__age_title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.main__city {
+  padding: 7px 10px;
+}
+
+.main__photo {
+  margin: 0;
+}
+
+.main__file_downlad {
+  margin-top: 0;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px 0 25px;
+}
+
+.btn__submit,
+.btn__reset {
+  margin-right: 7px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  background-color: rgb(16, 207, 16);
+  border: none;
+}
+
+.btn__submit:disabled {
+  color: white;
+  background-color: rgb(110, 5, 5);
+}
+
+.footer__icon {
+  position: fixed;
+  left: 20vw;
+  bottom: 7vh;
+  width: 64px;
+  border-radius: 100%;
+  transition: box-shadow .5s ease;
+}
+
+.footer__icon:hover {
+  box-shadow: 
+  0 0 5px 5px rgb(243, 134, 9);
+}
+
+.footer__icon_next {
+  position: fixed;
+  right: 20vw;
+  bottom: 7vh;
+  width: 64px;
+  border-radius: 100%;
+  transition: box-shadow .5s ease;
+}
+
+.footer__icon_next:hover {
+  box-shadow: 0 0 5px 5px rgb(10, 149, 255)
+}
+
+/* road */
+.container__road {
+  position: relative;
+  margin: 200px auto 0;
+  width: 650px;
+  height: 400px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.road {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 252px;
+background-image: url("./img/road.png");
+background-size: cover;
+background-position: 0 100%;
+background-repeat: no-repeat;
+}
+
+.car {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 300px;
+  height: 112px;
+  background: url("./img/car.png") no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+.tree {
+  position: absolute;
+  right: 21%;
+  bottom: 23%;
+  width: 200px;
+  height: 248px;
+  background: url("./img/tree.png") no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 4%;
+  right: 9%;
+  width: 200px;
+  height: 100px;
+  background: url("./img/cloud.png") no-repeat;
+  background-size: contain;
+  z-index: 1;  
+}
+
+.cloud2 {
+  position: absolute;
+  top: 2%;
+  left: 17%;
+  width: 200px;
+  height: 100px;
+  background: url("./img/cloud.png") no-repeat;
+  background-size: contain; 
+}
+
+.cloud3 {
+  position: absolute;
+  top: 8%;
+  left: -5%;
+  width: 200px;
+  height: 100px;
+  background: url("./img/cloud.png") no-repeat;
+  background-size: contain;
+}
+
+.next__page::before {
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+  display: inline-block;
+  content: "<";
+  font-size: 50px;
+  font-weight: bold;
+  color: #ede88c;
+}
+
+.next__page:nth-child(2)::before {
+  left: 11%;
+  color: violet;
+}
+
+.next__page:nth-child(3)::before {
+  content: "<";
+  left: 14%;
+  color: #19b6a5;
+}
+
+.next__page_text {
+  position: absolute;
+  bottom: 12%;
+  left: 21%;
+  font-size: 1.4em;
+  color: #ede88c;
+}
+
+
+@keyframes went {
+  0% {    transform: translateX(0px);
+  }
+  20% {    transform: translateX(-30px);
+  }
+  40% {    transform: translateX(-60px);
+  }
+  60% {    transform: translateX(-90px);
+  }
+  80% {    transform: translateX(-120px);
+  }
+  100% {    transform: translateX(-150px);
+  }
+}  
+
+.car:hover {
+  animation: went .7s ease;
+   animation-iteration-count: 1;
+   cursor: pointer;
+}

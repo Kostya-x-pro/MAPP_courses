@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leson 7 (Position)</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="header__title">
+        It Лаборатория
+      </h1>
+      <p class="header__title_description">
+        По направлениям
+      </p>
+      <p class="header__technologes">
+        Интернет-технологии(Html, Css, JavaScript)
+      </p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main__container">
+      <h2 class="main__title">
+        Регистрация
+      </h2>
+      <form action="#" method="get" class="main__form">
+        <p>
+          <input class="main__field" type="text">
+        </p>
+        <fieldset>
+          <legend class="legend">
+            Контактная информация
+          </legend>
+          <p class="main__fio">
+            ФИО
+          </p>
+          <p><input class="main__userinfo" type="text" placeholder="Полное имя"></p>
+          <p><input class="main__userinfo" type="email" placeholder="Ваш E-mail"></p>
+          <p><input class="main__userinfo" type="tel" placeholder="Ваш телефон"></p>
+          <p class="main__age_title">
+            Возраст
+          </p>
+          <p>
+            <label>
+              <input class="main__age" type="radio" name="age">
+              До 18
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="main__age" type="radio" name="age">
+              От 18 до 23
+            </label>
+          </p>
+          <p>
+            <label>
+              <input checked class="main__age" type="radio" name="age">
+              от 24 до 30
+            </label>
+          </p>
+          <p>
+            <label>
+              <input class="main__age" type="radio" name="age">
+              более 31
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input class="main__pass" type="password" placeholder="Ваш пароль">
+        </p>
+        <p>
+          <input class="main__pass" type="password" placeholder="Повторите пароль">
+        </p>
+          <select class="main__city" name="city">
+            <ul class="main__city_list">
+              <li class="main__city_item">
+                <option selected disabled>
+                Выберите город
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Могилёв
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Минск
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Гомель
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Гродно
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Витебск
+              </option>
+              </li>
+              <li class="main__city_item">
+                <option>
+                Брест
+              </option>
+              </li>
+            </ul>   
+          </select>
+          <p>
+            <label>
+              <input type="checkbox" name="checkbox">
+              Принимаю условия пользования
+            </label>
+          </p>
+          <p>
+            <textarea class="main__texarea" name="textaria" cols="30" rows="7">
+            </textarea>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="sex">
+              Муж
+            </label>
+            <label>
+              <input checked type="radio" name="sex">
+              Жен
+            </label>
+          </p>
+          <div class="main__photo">
+            Фото
+          </div> 
+          <p class="main__file_downlad"> 
+            <label>
+              <input type="file" name="upload">
+            </label>
+          </p>
+            <div class="btn">
+              <button class="btn__submit" name="submit" type="submit">
+                Отправить
+              </button>
+              <button class="btn__reset" name="reset" type="reset">
+                Очистить
+              </button>
+              <button class="btn__submit" name="submit" type="submit" disabled>
+                Отправить
+              </button>
+            </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="footer__link">
+      <img class="footer__icon" src="./img/top.png" alt="top icon">
+    </a>
+    <a href="./pages/road.html" class="footer__link_next">
+      <img class="footer__icon_next" src="./img/Next_arrow.png" alt="next arrow image">
+    </a>
+  </footer>
+
+</body>
+
+</html>
